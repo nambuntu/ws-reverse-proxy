@@ -1,0 +1,17 @@
+{
+  "name": "nf-reverse-proxy",
+  "version": "1.0.0",
+  "description": "Most of the java websocket examples I've found have been based on, or included a messaging protocol like STOMP. This example is the result of looking at how to proxy any message content,  without worrying about the messaging protocol.",
+  "main": "websocketproxy.js",
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "ws": "^7.4.1",
+    "wscat": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
