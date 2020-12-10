@@ -4,6 +4,24 @@ Most of the java websocket examples I've found have been based on, or included a
 protocol like STOMP. This example is the result of looking at how to proxy any message content, 
 without worrying about the messaging protocol.
 
+## How to test
+```bash 
+./test_websocketserver_javaproxy.sh
+
+Websocket server started on port 9999
+Websocket server will echo back requests in UPPERCASE
+Proxy server started on port 8888
+Proxy server will forward requests to port 9999
+Connected (press CTRL+C to quit)
+> orville
+> Received from client: orville
+< ORVILLE
+> wilbur
+> Received from client: wilbur
+< WILBUR
+
+```
+## More details
 Java implementation of a websocket reverse proxy. A similar method to the one described in 
 [https://www.nginx.com/blog/websocket-nginx/](https://www.nginx.com/blog/websocket-nginx/),
 but implemented in Java. This could be useful in Java application servers, e.g. Spring Boot.
