@@ -2,7 +2,6 @@ package com.zenhomes.nfreverseproxy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpHeaders;
 import org.springframework.web.socket.WebSocketHttpHeaders;
 import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
@@ -10,8 +9,6 @@ import org.springframework.web.socket.client.standard.StandardWebSocketClient;
 
 import java.io.IOException;
 import java.net.URI;
-import java.security.Principal;
-import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -30,7 +27,6 @@ public class NextHop {
 
     private WebSocketHttpHeaders getWebSocketHttpHeaders(final WebSocketSession userAgentSession) {
         WebSocketHttpHeaders headers = new WebSocketHttpHeaders();
-        Principal principal = userAgentSession.getPrincipal();
         return headers;
     }
 
